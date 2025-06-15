@@ -1,0 +1,66 @@
+/* Setup fonts */
+@font-face {
+  font-family: "TheCrew Sans Bold";
+  src: url('media/fonts/thecrewsans-bold-webfont.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "TheCrew Sans Regular";
+  src: url('media/fonts/thecrewsans-regular-webfont.ttf') format('truetype');
+}
+
+/* Main page background */
+.bg {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* Header [Bold] */
+h1 {
+	color: #ffffff;
+	font-family: "TheCrew Sans Bold";
+	font-size: 100%;
+	text-shadow: 1px 1px 6px #000000DF;
+}
+h1:hover {
+	/*color: #ffcb2f;*/
+	animation-play-state: running;
+	animation-name: header-appear;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;		/* Keep animation end state until un-hover */
+}
+/* Generic text */
+p {
+	color: black;
+	font-family: "TheCrew Sans Regular";
+	font-size: 100%;
+}
+/* Hyperlink */
+a {
+	color: #4fb3dc;
+	font-family: "TheCrew Sans Bold";
+	font-size: 100%;
+	text-shadow: 1px 1px 4px #000000;
+	/* Disable underline */
+	text-decoration:none;
+}
+a:hover {
+	color: #a0eafa;
+}
+.box {
+	background-image: url('media/bgsubcart.png')
+}
+.box-text {
+	color: white;
+	font-family: "TheCrew Sans Regular";
+	margin: auto;
+	text-align: center;
+	font-size: 150%;
+	text-shadow: 1px 1px 4px #000000;
+}
+
+@keyframes header-appear {
+	0% {color: #ffffff;}
+	100% {color: #ffcb2f;}
+}

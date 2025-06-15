@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "TheCrew Sans Bold";
+  src: url('media/fonts/thecrewsans-bold-webfont.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "TheCrew Sans Regular";
+  src: url('media/fonts/thecrewsans-regular-webfont.ttf') format('truetype');
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+}
+h1 {
+  color: white;
+  font-family: "TheCrew Sans Bold";
+  font-size: 400%;
+}
+p {
+  color: white;
+  font-family: "TheCrew Sans Regular";
+  font-size: 150%;
+}
+a {
+  color: LightBlue;
+  font-family: "TheCrew Sans Regular";
+  font-size: 150%;
+}
+
+button {
+  z-index: 1;
+  font-size: inherit;
+  font-family: inherit;
+  color: white;
+  padding: 0.5em 1em;
+  outline: none;
+  border: none;
+  background-color: hsl(236, 32%, 26%);
+}

@@ -1,0 +1,11 @@
+{
+	"LatestVersion": "0.2",
+	"Versions": [
+		{
+			"Version": "0.2",
+			"File": "TCUServer_0.2-2025-05-01.zip",
+			"SHA256": "CC577D727FBFC348AB9DF5A21C4E58287B4BE7E3E4CB6728264ACE601B03EF51",
+			"SupportedGameVersions": ["1.2.0.0"]
+		}
+	]
+}

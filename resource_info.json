@@ -1,0 +1,11 @@
+{
+	"ResourceName": 			"The Crew Unlimited",
+	"ResourceDate": 			"5/1/2025 7:30:00 PM",
+	"HomePage": 				"/",
+	"NewsDirectory":			"/TCUNews/",
+	"LauncherDirectory": 		"/TCULauncher/",
+	"ServerDirectory": 			"/TCUServer/",
+	"LauncherManifest":			"/TCULauncher/manifest.json",
+	"ServerManifest":			"/TCUServer/manifest.json",
+	"DiscordLink":				"https://discord.gg/tcu"
+}
