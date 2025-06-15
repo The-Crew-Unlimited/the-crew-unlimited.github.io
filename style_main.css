@@ -30,11 +30,22 @@ h1:hover {
 	animation-duration: 1s;
 	animation-fill-mode: forwards;		/* Keep animation end state until un-hover */
 }
+/* Header subtitle */
+.header-sub {
+	color: #ffcb2f;
+	margin: auto;
+	text-align: center;
+	font-family: "TheCrew Sans Bold";
+	font-size: 160%;
+	text-shadow: 1px 1px 2px #000000FF;
+}
 /* Generic text */
 p {
-	color: black;
+	color: #ffffff;
+	margin: auto;
 	font-family: "TheCrew Sans Regular";
 	font-size: 100%;
+	text-shadow: 1px 1px 2px #000000FF;
 }
 /* Hyperlink */
 a {
