@@ -7,5 +7,7 @@
 	"ServerDirectory": 			"/TCUServer/",
 	"LauncherManifest":			"/TCULauncher/manifest.json",
 	"ServerManifest":			"/TCUServer/manifest.json",
-	"DiscordLink":				"https://discord.gg/tcu"
+	"TCUWebsiteLink":			"https://thecrewunlimited.com",
+	"DiscordLink":				"https://discord.gg/tcu",
+	"YouTubeLink":				"https://www.youtube.com/@whammy4"
 }

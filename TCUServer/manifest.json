@@ -1,10 +1,11 @@
 {
-	"LatestVersion": "0.2",
+	"LatestVersion": "2025.08.15",
 	"Versions": [
 		{
-			"Version": "0.2",
-			"File": "TCUServer_0.2-2025-05-01.zip",
-			"SHA256": "CC577D727FBFC348AB9DF5A21C4E58287B4BE7E3E4CB6728264ACE601B03EF51",
+			"Version": "2025.08.15",
+			"File": "tcserver-15.08.2025_encr.7z",
+			"IsEncrypted": true,
+			"SHA256": "1FE649E8087ABC02A5B8B73B686550D840CB250D37CFF27C39FE8D64218A970D",
 			"SupportedGameVersions": ["1.2.0.0"]
 		}
 	]
