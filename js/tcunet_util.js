@@ -45,22 +45,15 @@ function getTCUNewsList(tcuInfo, callback) {
 		if (callback != null) callback(newslist);
 	}
 	
-	getTextFromURL(tcuInfo.NewsList, function(result) {
+	console.log("Retrieving newslist...");
+	getJsonFromURL(tcuInfo.NewsList, function(result) {
 		if (result != null) {
-			newslist = result.split("\n");
-			if (newslist.length > 0) {
-				console.log("News list retrieved:");
-				for (let i = 0; i < newslist.length; i++) {
-					let newsfile = newslist[i];
-					newsfile = newsfile.trim();
-					if (i == newslist.length - 1) {
-						console.log(" - " + newsfile + " [LATEST]");
-					} else {
-						console.log(" - " + newsfile);
-					}
-					newslist[i] = tcuInfo.NewsDirectory + newsfile;		// Make into absolute path
+			if (result.NewsList != null && result.NewsList.length > 0) {
+				for (let i = 0; i < result.NewsList.length; i++) {
+					console.log("- News retrieved: " + result.NewsList[i]);
+					// Make into absolute path
+					newslist[i] = tcuInfo.NewsDirectory + result.NewsList[i];
 				}
-				returnData = newslist;
 			}
 		}
 		if (callback != null) callback(newslist);

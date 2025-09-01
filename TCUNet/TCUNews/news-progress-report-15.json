@@ -1,0 +1,32 @@
+{
+	"Title": 		"TCU is releasing on September 15th",
+	"Author": 		"whammy4",
+	"Date": 		"9/1/2025, 11:47:00 PM",
+	"Thumbnail": 	"media/Pic_20250830_054111_2560x1440.jpg",
+	"Content": [
+		{
+			"Element": "h1",
+			"Text": "This is the last pre-release progress report"
+		},
+		{
+			"Element": "p",
+			"Text": "And also the first one on the website... That's awkward."
+		},
+		{
+			"Element": "p",
+			"Text": "\n- The server emulator is feature complete for a 1.0 release. \n- The TCU Launcher is complete. \n- The TCU Website is ready... You may have noticed that. :-) \n\n All that is left to do is to thoroughly test and validate the software, then prepare the release. \n\n Now, the news we have all been waiting for:"
+		},
+		{
+			"Element": "h1",
+			"Text": "TCU is releasing on September 15th 2025."
+		},
+		{
+			"Element": "p",
+			"Text": "\n A lot of our time and effort has been put into the project, and it's finally coming to fruition. We are as excited as you are. \n Thank you all for your patience, understanding and support."
+		},
+		{
+			"Element": "p",
+			"Text": "\n- whammy4"
+		}
+	]
+}

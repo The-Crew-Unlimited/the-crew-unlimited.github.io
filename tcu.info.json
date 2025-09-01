@@ -3,7 +3,7 @@
 	"ResourceDate": 			"9/1/2025 10:05:00 PM",
 	"HomePage": 				"/home/",
 	"NewsDirectory":			"/TCUNet/TCUNews/",
-	"NewsList":					"/TCUNet/TCUNews/newslist.txt",
+	"NewsList":					"/TCUNet/TCUNews/newslist.json",
 	"LauncherDirectory": 		"/TCUNet/TCULauncher/",
 	"ServerDirectory": 			"/TCUNet/TCUServer/",
 	"LauncherManifest":			"/TCUNet/TCULauncher/manifest.json",
