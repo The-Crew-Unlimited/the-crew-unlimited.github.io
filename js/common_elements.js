@@ -138,10 +138,10 @@ function selectRandomBackground(backgroundElemId, imagesArray) {
 	}
 }
 
-function createPostLink(newsData, parentElemId, style) {
+function createPostLink(newsData, postLink, parentElemId, style) {
 	let newsLink = document.createElement("a");
 	newsLink.innerText = newsData.Title;
-	newsLink.href = newsData.File;
+	newsLink.href = postLink;
 	newsLink.style = style;
 	document.getElementById(parentElemId).appendChild(newsLink);
 }

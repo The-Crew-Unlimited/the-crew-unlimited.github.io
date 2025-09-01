@@ -200,8 +200,11 @@
 									if (i < RecentPostsNum) {
 										getJsonFromURL(newsFile, function(post) {
 											if (post != null) {
-												createPostLink(post, "recent_news_list_thin", "margin: 5px 24px;");
-												createPostLink(post, "recent_news_list_wide", "margin: 5px 24px;");
+												let filename = newsFile.replace(/^.*[\\/]/, '');		// Remove path
+												filename = filename.replace(/\.[^/.]+$/, "");			// Remove extension
+												let postLink = NEWS_POST_REF + filename;
+												createPostLink(post, postLink, "recent_news_list_thin", "margin: 5px 24px;");
+												createPostLink(post, postLink, "recent_news_list_wide", "margin: 5px 24px;");
 											}
 										});
 									}
