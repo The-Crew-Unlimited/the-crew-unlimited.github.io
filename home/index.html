@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>TCU | Home</title>
+		<meta name="description" content="Community project that revives The Crew (2014).">
+		<meta name="keywords" content="The Crew, The Crew Unlimited">
+		<meta name="author" content="The Crew Unlimited">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" type="image/png" href="/favicon.png">
+		<script type="text/javascript" src="/js/tcunet_util.js"></script>
+		<script type="text/javascript" src="/js/common_elements.js"></script>
+		<script type="text/javascript" src="/js/posts.js"></script>
+		<link rel="prefetch" href="/media/tcu.png"/>
+		<link rel="prefetch" href="/media/background_home_01.jpg"/>
+		<link rel="prefetch" href="/media/background_home_02.jpg"/>
+		<link rel="prefetch" href="/media/background_home_03.jpg"/>
+		<link rel="prefetch" href="/media/background_home_04.jpg"/>
+		<link rel="prefetch" href="/media/background_home_05.jpg"/>
+	</head>
+	<body class="bg_fixed center_column anim_bg_fade_in" id="background" style="background-image: url('/media/background_home_01.png');">
+		<link rel="stylesheet" href="/css/style_main.css">
+		<script type="text/javascript">
+			selectRandomBackground("background", [
+				"/media/background_home_01.jpg",
+				"/media/background_home_02.jpg",
+				"/media/background_home_03.jpg",
+				"/media/background_home_04.jpg",
+				"/media/background_home_05.jpg"
+			]);
+			
+			getTCUNetInfo(function(tcuNetInfo) {
+				createTopNavbar(tcuNetInfo, true);
+			});
+		</script>
+		
+		<!-- TCU Logo and name header -->
+		<div id="tcu_header" class="center_column anim_fade_in" style="margin-top: 96px;">
+			<img src="/media/tcu.png" alt="TCU Logo" style="display: block; margin: auto; height:70px;"/>
+			<h1 class="fancy" style="margin: auto; text-align: center; font-size: 400%">THE CREW UNLIMITED</h1>
+			<p class="header-sub" style="margin-bottom: 12px;">A community project that brings back The Crew.</p>
+			<button id="download_button" class="button_download rounded" onclick="location.href='/download/';" style="margin-top: 16px; margin-bottom: 32px;"><span>Learn More</span></button>
+		</div>
+		
+		<!-- Container for rows (horizontal) -->
+		<div class="center_row">
+			<!-- ------------------------ -->
+			<!-- Left row (main contents) -->
+			<!-- ------------------------ -->
+			<div id="page_main_content" class="page_content anim_slide_from_left">
+				<!-- Latest News -->
+				<div id="news_container">
+					<!-- Script takes care of it below -->
+				</div>
+				<!-- About TCU (Short) -->
+				<div class="center_column">
+					<div class="page_contents header border_top" style="margin-top: 40px;"><h1>What is TCU?</h1></div>
+					<div class="page_contents">
+						<p>
+							TCU is a server emulator project that revives the decommissioned online-only game "The Crew" (2014).<br>
+							This project is not affiliated with publisher Ubisoft or developer Ivory Tower in any way.<br>
+							Check out the "About" page for more info!
+						</p>
+						<button class="button_download rounded" onclick="location.href='/about/';"><span>About TCU</span></button>
+					</div>
+				</div>
+				
+				<!------------------------------------------------------>
+				<!-- Page sidebar moved into the main page for mobile -->
+				<!------------------------------------------------------>
+				<div id="page_sidebar_thin" class="page_content">
+					<!-- Recent posts -->
+					<div>
+						<div class="page_contents header border_top">
+							<h1>Recent Posts</h1>
+							<!-- Add links for each recent news post -->
+						</div>
+						<div id="recent_news_list_thin" class="page_contents border_bottom">
+							<!-- Script takes care of it below -->
+						</div>
+					</div>
+					<!-- TCU Discord Widget -->
+					<div>
+						<div class="page_contents header"><h1>TCU Discord</h1></div>
+						<div class="page_contents">
+							<p>
+								Join up with the rest of The Crew players on our Discord server:<br>Chat, hang out, share your progress, cars, achievements, talk about video games, and more!
+							</p>
+							<button id="discord_join_button_thin" class="button_download rounded" style="margin: 20px;"><span>Join</span></button>
+						</div>
+						<iframe id="discord_widget_iframe_thin" style="width: 100%; height: 500px; border: none;"
+							sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
+								<p>Your browser does not support iframes.</p>
+						</iframe>
+					</div>
+				</div>
+			</div>
+			
+			<!-------------------------------->
+			<!-- Page sidebar (wide screen) -->
+			<!-------------------------------->
+			<div id="page_sidebar_wide" class="page_content_side anim_slide_from_right" style="margin-left: 40px;">
+				<!-- Recent posts -->
+				<div>
+					<div class="page_contents header">
+						<h1>Recent Posts</h1>
+						<!-- Add links for each recent news post -->
+					</div>
+					<div id="recent_news_list_wide" class="page_contents border_bottom">
+						<!-- Script takes care of it below -->
+					</div>
+				</div>
+				<!-- TCU Discord -->
+				<div>
+					<div class="page_contents header"><h1>TCU Discord</h1></div>
+					<div class="page_contents"><p>
+								Join up with the rest of The Crew players on our Discord server:<br>Chat, hang out, share your progress, cars, achievements, talk about video games, and more!
+							</p>
+							<button id="discord_join_button_wide" class="button_download rounded"><span>Join</span></button>
+					</div>
+					<iframe id="discord_widget_iframe_wide" style="width: 100%; height: 500px; border: none;"
+						sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
+							<p>Your browser does not support iframes.</p>
+					</iframe>
+				</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+			// Fade in the TCU Logo //
+			let tcuLogoContainer = document.getElementById("tcu_header");
+			tcuLogoContainer.style.opacity = "0%";
+			
+			// Delay loading the main contents until TCU Net info is loaded to avoid jank //
+			let mainContents = document.getElementById("page_main_content");
+			let sideContents = document.getElementById("page_sidebar_wide");
+			let mainContentsParent = mainContents.parentNode;
+			let sideContentsParent = sideContents.parentNode;
+			
+			mainContents.style.visibility = "hidden";
+			sideContents.style.visibility = "hidden";
+			
+			var leftToLoad = 1;
+			let addContentsBack = function(progress) {
+				if (progress <= 0) {
+					mainContents.style.visibility = "visible";
+					mainContentsParent.appendChild(mainContents);
+					sideContents.style.visibility = "visible";
+					sideContentsParent.appendChild(sideContents);
+				}
+			};
+			//
+			
+			// Set a placeholder news container while the real one loads //
+			let placeholder = createPostFrame(	{ "Title": "Loading Latest News...", "Thumbnail": "/media/background_0.jpg" }, null, "news_container",
+												null, null, null, null);
+			//
+			
+			getTCUNetInfo(function(tcuNetInfo) {
+				let isDownloadAvailable = false;
+				const RecentPostsNum = 10;				// How many recent posts to show
+				
+				if (tcuNetInfo != null) {
+					// Set Join Discord button links //
+					if (tcuNetInfo.DiscordLink != null) {
+						console.log("Discord link: " + tcuNetInfo.DiscordLink);
+						let discordJoinBtnW = document.getElementById("discord_join_button_wide");
+						if (discordJoinBtnW != null) {
+							discordJoinBtnW.onclick = function() {
+								window.open(tcuNetInfo.DiscordLink, "_blank", "noopener");
+							};
+						}
+						let discordJoinBtnT = document.getElementById("discord_join_button_thin");
+						if (discordJoinBtnT != null) {
+							discordJoinBtnT.onclick = function() {
+								window.open(tcuNetInfo.DiscordLink, "_blank", "noopener");
+							};
+						}
+					}
+					// Show discord widget //
+					if (tcuNetInfo.DiscordWidget != null) {
+						let discordWidgetIframeW = document.getElementById("discord_widget_iframe_wide");
+						if (discordWidgetIframeW != null) {
+							discordWidgetIframeW.src = tcuNetInfo.DiscordWidget;
+						}
+						let discordWidgetIframeT = document.getElementById("discord_widget_iframe_thin");
+						if (discordWidgetIframeT != null) {
+							discordWidgetIframeT.src = tcuNetInfo.DiscordWidget;
+						}
+					}
+					
+					// Set latest news container and add recent post links (for wide and thin screens) //
+					getTCUNewsList(tcuNetInfo, function(newslist) {
+						if (newslist.length > 0) {
+							for (let i = 0; i < newslist.length; i++) {
+								// Because we want to sort by latest to oldest
+								let newsFile = newslist[newslist.length - i - 1];
+								if (newsFile.endsWith(".json")) {
+									// Recent posts links //
+									if (i < RecentPostsNum) {
+										getJsonFromURL(newsFile, function(post) {
+											if (post != null) {
+												createPostLink(post, "recent_news_list_thin", "margin: 5px 24px;");
+												createPostLink(post, "recent_news_list_wide", "margin: 5px 24px;");
+											}
+										});
+									}
+									// Show latest TCU News
+									if (i == 0) {
+										getJsonFromURL(newsFile, function(post) {
+											if (post != null) {
+												post.File = newsFile;
+												placeholder.remove();
+												let postContainer = createPostFrame(post, NEWS_POST_REF + getFile(newsFile, true), "news_container",
+														null, null,
+														null, 2);
+												postContainer.id = "latest_news_post";
+											}
+											addContentsBack(leftToLoad -= 1);
+										});
+									}
+								}
+							}
+						} else {
+							console.log("Failed to retrieve any news!");
+						}
+					});
+					
+					if (tcuNetInfo.IsDownloadAvailable != null) {
+						isDownloadAvailable = tcuNetInfo.IsDownloadAvailable;
+					}
+				}
+				
+				// Update the download button //
+				let downloadButton = document.getElementById("download_button");
+				if (downloadButton != null) {
+					if (isDownloadAvailable) {
+						downloadButton.children[0].innerText = "Download";
+					} else {
+						downloadButton.children[0].innerText = "Learn More";
+						downloadButton.children[0].href = "/about/";
+					}
+				}
+			});
+			
+			createLegalWarningBox();
+		</script>
+	</body>
+</html>

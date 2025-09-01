@@ -1,0 +1,26 @@
+{
+	"Title": 		"Hello World",
+	"Author": 		"whammy4",
+	"Date": 		"9/1/2025, 9:56:00 PM",
+	"Thumbnail": 	"media/4997884-the-crew-screenshot.jpg",
+	"Content": [
+		{
+			"Element": "p",
+			"Text": "Ah, so glad you could make it! Here, take a seat. Took me a bit to get the website done, but it's finally ready. \n I call this... \"TCU Net\"! In the future it will serve a bigger purpose, but for now it's mostly just an informational website. An info center, if you will! \n\n Let's talk a bit about the website! \n I've never made any websites before, this is my first rookie effort. I think it turned out alright, eh? It's kinda based on that old The Crew Fansite Kit from 2014, I was lucky to dig it out of the old The Crew website on web archive. It contains all sorts of The Crew themed media, but most importantly for me personally - fonts! Hey, if they're sharing, I'm taking it. \n\n Their website layout and theme is really cool, and was the inspiration for the main home page. \n You could say it's a bit dated... I say it's old but gold! Much like the game itself. Either way, I hope the current design captures the spirit of the original game, and is pleasant to navigate and look at. \n\n The background images you see are screenshots from the current version of the (WIP) TCU Mod. I'll post plenty about it on this website in the future. \n\n That's all for now."
+		},
+		{
+			"Element": "h1",
+			"Text": "Stay tuned for more news very soon!"
+		},
+		{
+			"Element": "img",
+			"Alt": "Bottom Image",
+			"HRef": "/home/",
+			"Source": "media/154629-the-crew-screenshot.jpg"
+		},
+		{
+			"Element": "p",
+			"Text": "- whammy4"
+		}
+	]
+}

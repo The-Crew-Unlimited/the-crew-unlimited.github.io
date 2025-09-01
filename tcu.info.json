@@ -1,13 +1,16 @@
 {
 	"ResourceName": 			"The Crew Unlimited",
-	"ResourceDate": 			"5/1/2025 7:30:00 PM",
-	"HomePage": 				"/",
-	"NewsDirectory":			"/TCUNews/",
-	"LauncherDirectory": 		"/TCULauncher/",
-	"ServerDirectory": 			"/TCUServer/",
-	"LauncherManifest":			"/TCULauncher/manifest.json",
-	"ServerManifest":			"/TCUServer/manifest.json",
+	"ResourceDate": 			"9/1/2025 10:05:00 PM",
+	"HomePage": 				"/home/",
+	"NewsDirectory":			"/TCUNet/TCUNews/",
+	"NewsList":					"/TCUNet/TCUNews/newslist.txt",
+	"LauncherDirectory": 		"/TCUNet/TCULauncher/",
+	"ServerDirectory": 			"/TCUNet/TCUServer/",
+	"LauncherManifest":			"/TCUNet/TCULauncher/manifest.json",
+	"ServerManifest":			"/TCUNet/TCUServer/manifest.json",
 	"TCUWebsiteLink":			"https://thecrewunlimited.com",
+	"YouTubeLink":				"https://www.youtube.com/@whammy4",
 	"DiscordLink":				"https://discord.gg/tcu",
-	"YouTubeLink":				"https://www.youtube.com/@whammy4"
+	"DiscordWidget":			"https://discord.com/widget?id=1080974618082431018",
+	"IsDownloadAvailable":		false
 }
