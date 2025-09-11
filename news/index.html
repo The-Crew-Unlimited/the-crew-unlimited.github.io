@@ -65,15 +65,22 @@
 										getJsonFromURL(fullPathToPost, function(post) {
 											if (post != null) {
 												post.File = fullPathToPost;
+												
+												let returnBackLink = document.createElement("a");
+												returnBackLink.id = "return_back";
+												returnBackLink.style = "margin-top: 64px; margin-bottom: 64px; font-size: 32px;";
+												returnBackLink.innerText = "\n< Back";
+												returnBackLink.href = "/news/";
+												document.getElementById("news_list_container").appendChild(returnBackLink);
+												
 												let postContainer = createPostFrame(post, NEWS_POST_REF + postId,"news_list_container",
-														{ "style": "margin-top: 64px;" }, null,
+														{ "style": "" }, null,
 														null, null
 												);
 												postContainer.id = "target_post";
 												document.head.getElementsByTagName("title")[0].innerText = "TCU | " + post.Title;
 												tempLoadingLabel.remove();
 												document.getElementById("page_title").remove();
-												document.getElementById("page_subtitle").remove();
 											} else {
 												// Failed to load
 												location.href = "/news/";

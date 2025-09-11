@@ -30,7 +30,7 @@ function createTopNavbar(tcuNetInfo, includeSocials) {
 	let youtubeLink = tcuNetInfo != null ? tcuNetInfo.YouTubeLink : null;
 	
 	let topnavBar = document.createElement("div", "topnav");
-	topnavBar.id = "topnav_tcu";
+	topnavBar.id = "topnav";
 	topnavBar.className = "topnav";
 
 	topnavBar.appendChild(createImageButton("topnav_logo", "/home/", "/media/tcu_topnav.png", "/media/tcu_topnav_black.png", false));
@@ -143,6 +143,7 @@ function createPostLink(newsData, postLink, parentElemId, style) {
 	newsLink.innerText = newsData.Title;
 	newsLink.href = postLink;
 	newsLink.style = style;
+	newsLink.style.textAlign = "center";
 	document.getElementById(parentElemId).appendChild(newsLink);
 }
 

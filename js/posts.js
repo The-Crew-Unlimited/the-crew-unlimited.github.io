@@ -1,4 +1,5 @@
 const NEWS_POST_REF = "/news/?post=";
+const NEWS_POST_REF_HTML = "/news_html/?post=";
 const LABEL_TRUNCATED_READ_FULL_POST = "> Read Full Post";
 const LABEL_TRUNCATED_READ_FULL_POST_FONTSIZE = "32px";
 

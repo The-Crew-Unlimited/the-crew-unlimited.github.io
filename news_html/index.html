@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>TCU | News</title>
+		<meta name="description" content="Community project that revives The Crew (2014).">
+		<meta name="keywords" content="The Crew, The Crew Unlimited">
+		<meta name="author" content="The Crew Unlimited">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" type="image/png" href="/favicon.png">
+		<script type="text/javascript" src="/js/tcunet_util.js"></script>
+		<script type="text/javascript" src="/js/common_elements.js"></script>
+		<script type="text/javascript" src="/js/posts.js"></script>
+	</head>
+	<body class="bg_fixed center_column" id="background">
+		<link rel="stylesheet" href="/css/style_main.css">
+		
+		<script type="text/javascript">
+			let indexOfPost = document.URL.indexOf(NEWS_POST_REF_HTML);
+			let postId = null;
+			if (indexOfPost != -1) {
+				postId = document.URL.substring(indexOfPost + NEWS_POST_REF_HTML.length);
+			}
+			
+			let tempLoadingLabel = document.createElement("h1");
+			tempLoadingLabel.id = "loading_label";
+			tempLoadingLabel.className = "page_header_text";
+			tempLoadingLabel.style = "font-size: 64px; text-align: center; margin-bottom: 500px;";
+			tempLoadingLabel.innerText = postId != null ? "LOADING POST..." : "GETTING LATEST NEWS...";
+			document.getElementById("background").appendChild(tempLoadingLabel);
+			
+			getTCUNetInfo(function(tcuNetInfo) {
+				if (tcuNetInfo != null) {
+					// Check if the url ends with "?post=...", if so then show a specific post, otherwise show all news.
+					let showingPost = false;
+					if (postId != null) {
+						fullPathToPost = getNewsPostPath(tcuNetInfo, postId);
+						if (fullPathToPost != null) {
+							getJsonFromURL(fullPathToPost, function(post) {
+								if (post != null) {
+									post.File = fullPathToPost;
+									let postContainer = createPostFrame(post, NEWS_POST_REF_HTML + postId, "background",
+											null, null,
+											null, null
+									);
+									postContainer.id = "target_post";
+									document.head.getElementsByTagName("title")[0].innerText = "TCU | " + post.Title;
+									tempLoadingLabel.remove();
+								} else {
+									// Failed to load
+									location.href = "/news/";
+								}
+							});
+							showingPost = true;
+						}
+					}
+				} else {
+					location.href = "/news/";
+				}
+			});
+		</script>
+	</body>
+</html>

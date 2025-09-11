@@ -1,11 +1,25 @@
 {
-	"LatestVersion": "2025.08.15",
+	"LatestVersion": "1.0.0.0_pre3",
 	"Versions": [
 		{
 			"Version": "2025.08.15",
 			"File": "tcserver-15.08.2025_encr.7z",
 			"IsEncrypted": true,
 			"SHA256": "1FE649E8087ABC02A5B8B73B686550D840CB250D37CFF27C39FE8D64218A970D",
+			"SupportedGameVersions": ["1.2.0.0"]
+		},
+		{
+			"Version": "1.0.0.0_pre1",
+			"File": "TCUServer-1.0.0.0_pre1.7z",
+			"IsEncrypted": true,
+			"SHA256": "059D01085828353E1E3344FA483C67E110C34611A99BB79C2736AD176D3B4AE1",
+			"SupportedGameVersions": ["1.2.0.0"]
+		},
+		{
+			"Version": "1.0.0.0_pre3",
+			"File": "TCUServer-1.0.0.0_pre3.7z",
+			"IsEncrypted": true,
+			"SHA256": "2B763C7A7B467995F4920C3B8FEAA0C0E1E92A1AB396AD8D2C1DBC13776BD625",
 			"SupportedGameVersions": ["1.2.0.0"]
 		}
 	]
