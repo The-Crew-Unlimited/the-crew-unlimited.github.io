@@ -1,5 +1,5 @@
 {
-	"LatestLauncherVer": "0.9.8.0",
+	"LatestLauncherVer": "0.9.8.1",
 	"Versions": [
 		{
 			"Version": "0.9.0.0",
@@ -24,6 +24,11 @@
 		{
 			"Version": "0.9.8.0",
 			"File": "TCULauncher-0.9.8.0_pre1.7z",
+			"IsEncrypted": true
+		},
+		{
+			"Version": "0.9.8.1",
+			"File": "TCULauncher-0.9.8.1_pre2.7z",
 			"IsEncrypted": true
 		}
 	]
