@@ -1,0 +1,34 @@
+{
+	"Title": 		"TCU 1.0 has been released!",
+	"Author": 		"whammy4",
+	"Date": 		"9/15/2025, 12:00:00 AM",
+	"Thumbnail": 	"media/two-dots-studio-the-crew-pack-large.jpg",
+	"Content": [
+		{
+			"Element": "h1",
+			"Text": "The Crew is BACK"
+		},
+		{
+			"Element": "a",
+			"HRef" : "/download/",
+			"Text": "Download the TCU Launcher here, and start playing right now!\n"
+		},
+		{
+			"Element": "p",
+			"Text": "\n The TCU Project has been released - The Crew is back and it's here to stay!"
+		},
+		{
+			"Element": "p",
+			"Text": "Stay tuned for more announcements and posts from us soon..."
+		},
+		{
+			"Element": "p",
+			"Text": "\n- whammy4 \n\n"
+		},
+		{
+			"Element": "a",
+			"HRef": "https://www.artstation.com/artwork/ZGRVox",
+			"Text": "The Crew original artwork/banner by Two Dots Studio"
+		}
+	]
+}

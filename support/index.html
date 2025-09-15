@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>TCU | Support Us</title>
+		<meta name="description" content="Community project that revives The Crew (2014).">
+		<meta name="keywords" content="The Crew, The Crew Unlimited">
+		<meta name="author" content="The Crew Unlimited">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" type="image/png" href="/favicon.png">
+		<script type="text/javascript" src="/js/tcunet_util.js"></script>
+		<script type="text/javascript" src="/js/common_elements.js"></script>
+		<script type="text/javascript" src="/js/posts.js"></script>
+		<link rel="prefetch" href="/media/tcu.png"/>
+		<link rel="prefetch" href="/media/background_home_01.jpg"/>
+		<link rel="prefetch" href="/media/background_home_02.jpg"/>
+		<link rel="prefetch" href="/media/background_home_03.jpg"/>
+		<link rel="prefetch" href="/media/background_home_04.jpg"/>
+		<link rel="prefetch" href="/media/background_home_05.jpg"/>
+	</head>
+	<body class="bg_fixed center_column" id="background" style="background-image: url('/media/background_home_01.jpg');">
+		<link rel="stylesheet" href="/css/style_main.css">
+		<script type="text/javascript">
+			selectRandomBackground("background", [
+				"/media/background_home_01.jpg",
+				"/media/background_home_02.jpg",
+				"/media/background_home_03.jpg",
+				"/media/background_home_04.jpg",
+				"/media/background_home_05.jpg"
+			]);
+			
+			getTCUNetInfo(function(tcuNetInfo) {
+				createTopNavbar(tcuNetInfo, true);
+				
+				// Setup patreon link //
+				if (tcuNetInfo.PatreonLink != null) {
+					let patreonBtn = document.getElementById("button_patreon");
+					if (patreonBtn != null) {
+						patreonBtn.onclick = function() {
+							window.open(tcuNetInfo.PatreonLink, "_blank", "noopener");
+						};
+					}
+				}
+			});
+		</script>
+		
+		<h1 id="page_title" class="page_header_text anim_fade_in" style="margin-top: 120px;">Support TCU!</h1>
+		
+		<!-- Container for rows (horizontal) -->
+		<div class="center_column">
+			<div class="page_content anim_slide_from_left" id="page_content">
+				<!-- TCU Patreon -->
+				<div id="tcu_patreon_info" class="center_column">
+					<div class="page_contents header border_top">
+						<h1><span><img src="/media/socials/patreon_colored.png" alt="Patreon Logo" class="header_icon"/></span>TCU Patreon</h1>
+					</div>
+					<div class="page_contents">
+						<p>
+							The TCU Project is a labor of pure love, and will always be 100% free of charge.<br>
+							We have invested lots of time and money into this project, and will continue to for years to come.
+							<br><br>
+							If you enjoy and appreciate our work, then feel free to financially support the TCU Project over on Patreon - 
+							it would really help us cover continuous project expenses.
+							<br><br>
+							We also post special updates and previews of ongoing efforts on our Patreon page for everyone, check them out!
+						</p>
+						<button id="button_patreon" class="button_download rounded bgcolor_patreon" style="margin: 20px;">
+							<span>Visit our Patreon!</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+			createLegalWarningBox()
+		</script>
+	</body>
+</html>

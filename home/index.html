@@ -18,7 +18,7 @@
 		<link rel="prefetch" href="/media/background_home_04.jpg"/>
 		<link rel="prefetch" href="/media/background_home_05.jpg"/>
 	</head>
-	<body class="bg_fixed center_column anim_bg_fade_in" id="background" style="background-image: url('/media/background_home_01.png');">
+	<body class="bg_fixed center_column anim_bg_fade_in" id="background" style="background-image: url('/media/background_home_01.jpg');">
 		<link rel="stylesheet" href="/css/style_main.css">
 		<script type="text/javascript">
 			selectRandomBackground("background", [
@@ -54,7 +54,9 @@
 				</div>
 				<!-- About TCU (Short) -->
 				<div class="center_column">
-					<div class="page_contents header border_top" style="margin-top: 40px;"><h1>What is TCU?</h1></div>
+					<div class="page_contents header border_top" style="margin-top: 40px;">
+						<h1><span><img src="/media/tcu.png" alt="TCU Logo" class="header_icon"/></span>What is TCU?</h1>
+					</div>
 					<div class="page_contents">
 						<p>
 							TCU is a server emulator project that revives the decommissioned online-only game "The Crew" (2014).<br>
@@ -65,6 +67,19 @@
 					</div>
 				</div>
 				
+				<!-- TCU Patreon -->
+				<div id="tcu_patreon_info" class="center_column">
+					<div class="page_contents header border_top">
+						<h1><span><img src="/media/socials/patreon_colored.png" alt="Patreon Logo" class="header_icon"/></span>Support TCU</h1>
+					</div>
+					<div class="page_contents">
+						<p>
+							We now have a Patreon so you can support us and help us cover the project expenses!
+						</p>
+						<button class="button_download rounded bgcolor_patreon" onclick="location.href='/support/';" style="margin: 20px;"><span>Support TCU</span></button>
+					</div>
+				</div>
+				
 				<!------------------------------------------------------>
 				<!-- Page sidebar moved into the main page for mobile -->
 				<!------------------------------------------------------>
@@ -72,7 +87,7 @@
 					<!-- Recent posts -->
 					<div>
 						<div class="page_contents header border_top">
-							<h1>Recent Posts</h1>
+							<h1><span><img src="/media/icons/datatower.png" alt="News Icon" class="header_icon"/></span>Recent Posts</h1>
 							<!-- Add links for each recent news post -->
 						</div>
 						<div id="recent_news_list_thin" class="page_contents border_bottom">
@@ -81,12 +96,14 @@
 					</div>
 					<!-- TCU Discord Widget -->
 					<div>
-						<div class="page_contents header"><h1>TCU Discord</h1></div>
+						<div class="page_contents header">
+							<h1><span><img src="/media/socials/discord_colored.png" alt="Discord Icon" class="header_icon"/></span>TCU Discord</h1>
+						</div>
 						<div class="page_contents">
 							<p>
 								Join up with the rest of The Crew players on our Discord server:<br>Chat, hang out, share your progress, cars, achievements, talk about video games, and more!
 							</p>
-							<button id="discord_join_button_thin" class="button_download rounded" style="margin: 20px;"><span>Join</span></button>
+							<button id="discord_join_button_thin" class="button_download rounded bgcolor_discord" style="margin: 20px;"><span>Join</span></button>
 						</div>
 						<iframe id="discord_widget_iframe_thin" style="width: 100%; height: 500px; border: none;"
 							sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
@@ -103,7 +120,7 @@
 				<!-- Recent posts -->
 				<div>
 					<div class="page_contents header">
-						<h1>Recent Posts</h1>
+						<h1><span><img src="/media/icons/datatower.png" alt="News Icon" class="header_icon"/></span>Recent Posts</h1>
 						<!-- Add links for each recent news post -->
 					</div>
 					<div id="recent_news_list_wide" class="page_contents border_bottom">
@@ -112,11 +129,13 @@
 				</div>
 				<!-- TCU Discord -->
 				<div>
-					<div class="page_contents header"><h1>TCU Discord</h1></div>
+					<div class="page_contents header">
+						<h1><span><img src="/media/socials/discord_colored.png" alt="Discord Icon" class="header_icon"/></span>TCU Discord</h1>
+					</div>
 					<div class="page_contents"><p>
 								Join up with the rest of The Crew players on our Discord server:<br>Chat, hang out, share your progress, cars, achievements, talk about video games, and more!
 							</p>
-							<button id="discord_join_button_wide" class="button_download rounded"><span>Join</span></button>
+							<button id="discord_join_button_wide" class="button_download rounded bgcolor_discord"><span>Join</span></button>
 					</div>
 					<iframe id="discord_widget_iframe_wide" style="width: 100%; height: 500px; border: none;"
 						sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
@@ -158,6 +177,7 @@
 			
 			getTCUNetInfo(function(tcuNetInfo) {
 				let isDownloadAvailable = false;
+				let isPatreonAvailable = false;
 				const RecentPostsNum = 10;				// How many recent posts to show
 				
 				if (tcuNetInfo != null) {
@@ -232,6 +252,9 @@
 					if (tcuNetInfo.IsDownloadAvailable != null) {
 						isDownloadAvailable = tcuNetInfo.IsDownloadAvailable;
 					}
+					if (tcuNetInfo.PatreonLink != null) {
+						isPatreonAvailable = true;
+					}
 				}
 				
 				// Update the download button //
@@ -242,6 +265,12 @@
 					} else {
 						downloadButton.children[0].innerText = "Learn More";
 						downloadButton.children[0].href = "/about/";
+					}
+				}
+				if (!isPatreonAvailable) {
+					let patreonInfoBox = document.getElementById("tcu_patreon_info");
+					if (patreonInfoBox != null) {
+						patreonInfoBox.remove();
 					}
 				}
 			});

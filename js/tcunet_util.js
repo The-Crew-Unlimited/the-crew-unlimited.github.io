@@ -60,54 +60,56 @@ function getTCUNewsList(tcuInfo, callback) {
 	});
 }
 
-/*function getNewsData(newsFilePath, callback) {
-	// Read the news html //
-	getTextFromURL(newsFilePath, function(newsFile) {
-		let ReturnData = {};
-		ReturnData["File"] = newsFilePath;
-		
-		let dom = new DOMParser().parseFromString(newsFile, "text/html");
-		
-		// Get title (of the page) //
-		let titleTags = dom.getElementsByTagName("title");
-		if (titleTags.length > 0) {
-			let titleTag = titleTags[0];
-			ReturnData["Title"] = titleTag.innerText;
-		}
-		
-		// Get meta tags //
-		let metaTags = dom.getElementsByTagName("meta");
-		
-		for (let i = 0; i < metaTags.length; i++) {
-			let name = metaTags[i].getAttribute("name");
-			let content = metaTags[i].getAttribute("content");
-			if (name == "date") {
-				// Assume that the date format is "8/25/2025, 5:27:55 PM" (like how Date().toLocaleString() does it, or the DateToString() function below) //
-				ReturnData["Date"] = content;
-			} else if (name == "author") {
-				ReturnData["Author"] = content;
-			}
-		}
-		
-		if (callback != null) callback(ReturnData);
-	});
-}
-
-// Data
-function getLatestTCUNews(tcuInfo, callback) {
-	getTCUNewsList(tcuInfo, function(newslist) {
-		if (newslist != null && newslist.length > 0) {
-			let latestNewsFile = newslist[newslist.length - 1];
-			if (latestNewsFile != null) {
-				getNewsData(latestNewsFile, function(latestNewsData) {
-					if (callback != null) callback(latestNewsData);
+function getLatestLauncherDownload(tcuNetInfo, callback) {
+	if (tcuNetInfo != null) {
+		let launcherDir = tcuNetInfo.LauncherDirectory;
+		if (launcherDir != null) {
+			let launcherManifest = tcuNetInfo.LauncherManifest;
+			if (launcherManifest != null) {
+				console.log("Retrieving the latest TCU Launcher download...");
+				getJsonFromURL(launcherManifest, function(result) {
+					if (result != null) {
+						console.log("Launcher Manifest retrieved");
+						let latestVer = result.LatestLauncherVer;
+						let versionsArray = result.Versions;
+						if (latestVer == null) {
+							// No latest version explicitly defined, manually get the latest launcher version from the list
+							if (versionsArray != null && versionsArray.length > 0) {
+								// Get the latest array entry //
+								let latest = versionsArray[versionsArray.length - 1];
+								if (latest != null && latest.Version != null) {
+									latestVer = latest.Version;
+								} else {
+									console.log("Latest launcher version entry is invalid!");
+								}
+							}
+						}
+						// Latest launcher version should be retrieved now, let's get the entry.
+						if (latestVer != null) {
+							for (let i = 0; i < versionsArray.length; i++) {
+								let versionEntry = versionsArray[i];
+								if (versionEntry.Version == latestVer) {
+									console.log("Got latest launcher version: " + latestVer);
+									if (callback != null) callback(versionEntry);		// Return the version entry
+									return;
+								}
+							}
+							console.log("Couldn't get Launcher version: " + latestVer);
+						}
+					} else {
+						console.log("Couldn't get Launcher Manifest!");
+					}
+					if (callback != null) callback(null);		// Return null
 				});
-				return;
+			} else {
+				console.log("No LauncherManifest defined in TCU Net info!");
 			}
+		} else {
+			console.log("No LauncherDirectory defined in TCU Net info!");
 		}
-		if (callback != null) callback(null);
-	});
-}*/
+	}
+	return null;
+}
 
 function DateToString(date) {
 	return date.toLocaleString("en-US", { timeZone: "UTC" });

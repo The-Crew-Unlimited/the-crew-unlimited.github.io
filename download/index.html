@@ -18,7 +18,7 @@
 		<link rel="prefetch" href="/media/background_home_04.jpg"/>
 		<link rel="prefetch" href="/media/background_home_05.jpg"/>
 	</head>
-	<body class="bg_fixed center_column" id="background" style="background-image: url('/media/background_home_01.png');">
+	<body class="bg_fixed center_column" id="background" style="background-image: url('/media/background_home_01.jpg');">
 		<link rel="stylesheet" href="/css/style_main.css">
 		<script type="text/javascript">
 			selectRandomBackground("background", [
@@ -31,33 +31,58 @@
 			
 			getTCUNetInfo(function(tcuNetInfo) {
 				createTopNavbar(tcuNetInfo, true);
+				
+				// Set latest launcher version download //
+				let latestVersion = getLatestLauncherDownload(tcuNetInfo, function(latestVersion) {
+					if (latestVersion != null) {
+						let downloadBtn = document.getElementById("button_download_launcher");
+						let downloadVerLabel = document.getElementById("button_download_launcher_version_label");
+						if (downloadBtn != null) {
+							downloadBtn.onclick = function() {
+								window.open(tcuNetInfo.LauncherDirectory + latestVersion.File, "_blank", "noopener");
+							};
+						}
+						if (downloadVerLabel != null) {
+							downloadVerLabel.innerText = "Latest TCU Launcher version: " + latestVersion.Version;
+						}
+					}
+				});
 			});
 		</script>
 		
+		<h1 id="page_title" class="page_header_text anim_fade_in" style="margin-top: 120px;">Download</h1>
+		
 		<!-- Container for rows (horizontal) -->
 		<div class="center_column">
-			<h1 id="page_title" class="page_header_text anim_fade_in" style="margin-top: 120px;">Download</h1>
-			<div class="page_content anim_slide_from_left" id="page_content" style="margin-top: 48px;">
+			<div class="page_content anim_slide_from_left" id="page_content">
 				<!-- Download Info -->
 				<div id="tcu_download_info" class="center_column">
-					<div class="page_contents header border_top"><h1>WE'RE ALMOST DONE...</h1></div>
+					<div class="page_contents header border_top">
+						<h1><span><img src="/media/tcu.png" alt="TCU Logo" class="header_icon"/></span>TCU Launcher</h1>
+					</div>
 					<div class="page_contents">
 						<p>
-							TCU isn't released yet, but we're nearly there. Keep up with the news on our website and Discord server!
+							To begin, you need to download the TCU Launcher.<br>
+							It will help you easily patch and manage your The Crew game installation(s) and savegames.
+							<br><br>
+							(Note: You have to acquire The Crew game files yourself as we can't redistribute them)
 						</p>
-						<button class="button_download rounded" onclick="location.href='/news/';"><span>Latest News</span></button>
+						<button id="button_download_launcher" class="button_download rounded"><span>Download</span></button>
+						<p id="button_download_launcher_version_label">Latest TCU Launcher version: 0.0.0.0</p>
 					</div>
 				</div>
-				<!-- About TCU (Short) -->
-				<div class="center_column">
-					<div class="page_contents header border_top"><h1>What is TCU?</h1></div>
+				<!-- TCU Patreon -->
+				<div id="tcu_patreon_info" class="center_column">
+					<div class="page_contents header border_top">
+						<h1><span><img src="/media/socials/patreon_colored.png" alt="Patreon Logo" class="header_icon"/></span>Support TCU</h1>
+					</div>
 					<div class="page_contents">
 						<p>
-							TCU is a server emulator project that revives the decommissioned online-only game "The Crew" (2014).<br>
-							This project is not affiliated with publisher Ubisoft or developer Ivory Tower in any way.<br>
-							Check out the "About" page for more info!
+							We now have a Patreon so you can support us and help us cover the project expenses!
 						</p>
-						<button class="button_download rounded" onclick="location.href='/about/';"><span>About TCU</span></button>
+						<button id="button_patreon" class="button_download rounded bgcolor_patreon" style="margin: 20px;" onclick="location.href='/support/';">
+							<span>Support TCU</span>
+						</button>
 					</div>
 				</div>
 			</div>

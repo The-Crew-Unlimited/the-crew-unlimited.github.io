@@ -1,6 +1,6 @@
 {
 	"ResourceName": 			"The Crew Unlimited",
-	"ResourceDate": 			"9/1/2025 10:05:00 PM",
+	"ResourceDate": 			"9/15/2025 12:00:00 AM",
 	"HomePage": 				"/home/",
 	"NewsDirectory":			"/TCUNet/TCUNews/",
 	"NewsList":					"/TCUNet/TCUNews/newslist.json",
@@ -12,5 +12,6 @@
 	"YouTubeLink":				"https://www.youtube.com/@whammy4",
 	"DiscordLink":				"https://discord.gg/tcu",
 	"DiscordWidget":			"https://discord.com/widget?id=1080974618082431018",
-	"IsDownloadAvailable":		false
+	"PatreonLink":				"https://patreon.com/tcuproject",
+	"IsDownloadAvailable":		true
 }
