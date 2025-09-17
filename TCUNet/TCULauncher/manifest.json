@@ -1,5 +1,5 @@
 {
-	"LatestLauncherVer": "1.1.4.0",
+	"LatestLauncherVer": "1.1.5.0",
 	"Versions": [
 		{
 			"Version": "0.9.0.0",
@@ -55,6 +55,10 @@
 		{
 			"Version": "1.1.4.0",
 			"File": "TCULauncher-1.1.4.0.7z"
+		},
+		{
+			"Version": "1.1.5.0",
+			"File": "TCULauncher-1.1.5.0.7z"
 		}
 	]
 }
