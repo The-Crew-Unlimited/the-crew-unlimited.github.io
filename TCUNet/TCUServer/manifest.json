@@ -27,6 +27,12 @@
 			"File": "TCUServer-1.0.0.0.7z",
 			"SHA256": "0E8984370D297D5AAA00DC3231A29204CDE63D5B72FA5C70F5561EC6A1EA3F64",
 			"SupportedGameVersions": ["1.2.0.0"]
+		},
+		{
+			"Version": "1.1.0.0",
+			"File": "TCUServer-1.1.0.0.7z",
+			"SHA256": "02998F6AEEC3AF122E83CE83CC4E689FD1BD677049B41AEC9E5DBAD1709CFDD0",
+			"SupportedGameVersions": ["1.2.0.0"]
 		}
 	]
 }

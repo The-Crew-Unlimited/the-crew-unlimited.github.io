@@ -1,0 +1,44 @@
+{
+	"Title": 		"TCU Server update 1.1.0.0",
+	"Author": 		"whammy4",
+	"Date": 		"9/20/2025, 2:12:16 PM",
+	"Thumbnail": 	"media/Pic_20250829_204127_2560x1440.jpg",
+	"Content": [
+		{
+			"Element": "h1",
+			"Text": "TCU Server has been updated to 1.1.0.0"
+		},
+		{
+			"Element": "p",
+			"Text": "There's more work to do, but we wanted to get these fixes out ASAP."
+		},
+		{
+			"Element": "p",
+			"Text": "\n Patch notes:"
+		},
+		{
+			"Element": "p",
+			"Text": "▸ Fixed an issue with saves being reset when quitting the game while your game is being saved."
+		},
+		{
+			"Element": "p",
+			"Text": "▸ Your game will now be 100% saved on exit."
+		},
+		{
+			"Element": "p",
+			"Text": "▸ Improved Linux / Steam Deck compatibility."
+		},
+		{
+			"Element": "p",
+			"Text": "▸ Fixed new License Plates not showing up in your HQ until you restart the game."
+		},
+		{
+			"Element": "p",
+			"Text": "▸ Fixed Summit Practice events giving fake rewards then erroring you out."
+		},
+		{
+			"Element": "p",
+			"Text": "\n Also, everyone - thank you so much for all your support! We greatly appreciate it! \n- whammy4 \n\n"
+		}
+	]
+}
