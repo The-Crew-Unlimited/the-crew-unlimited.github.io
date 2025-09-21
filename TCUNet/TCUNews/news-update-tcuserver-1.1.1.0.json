@@ -1,0 +1,28 @@
+{
+	"Title": 		"TCU Server update 1.1.1.0",
+	"Author": 		"whammy4",
+	"Date": 		"9/21/2025, 2:03:50 PM",
+	"Thumbnail": 	"media/Pic_20250831_044049_2560x1440.jpg",
+	"Content": [
+		{
+			"Element": "h1",
+			"Text": "TCU Server has been updated to 1.1.1.0"
+		},
+		{
+			"Element": "p",
+			"Text": "\n Patch notes:"
+		},
+		{
+			"Element": "p",
+			"Text": "▸ Improved Linux / Steam Deck compatibility."
+		},
+		{
+			"Element": "p",
+			"Text": "▸ Fixed new License Plates not showing up in your HQ until you restart the game. (We confused something and forgot to actually ship this fix in the last patch, our apologies!)"
+		},
+		{
+			"Element": "p",
+			"Text": "\n- whammy4 \n\n"
+		}
+	]
+}
