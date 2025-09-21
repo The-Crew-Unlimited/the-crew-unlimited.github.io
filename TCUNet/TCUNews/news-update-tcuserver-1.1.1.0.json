@@ -22,6 +22,10 @@
 		},
 		{
 			"Element": "p",
+			"Text": "▸ Fixed the 'AddCar'/'RemoveCar' cheats."
+		},
+		{
+			"Element": "p",
 			"Text": "\n- whammy4 \n\n"
 		}
 	]
