@@ -1,0 +1,64 @@
+{
+	"Title": 		"TCU Server update 1.2.0.0",
+	"Author": 		"whammy4",
+	"Date": 		"9/29/2025, 8:41:44 PM",
+	"Thumbnail": 	"media/Pic_20250929_201600_2560x1440.jpg",
+	"Content": [
+		{
+			"Element": "h1",
+			"Text": "TCU Server has been updated to 1.2.0.0"
+		},
+		{
+			"Element": "p",
+			"Text": "Sorry for the delay, but we got a whole heap of fixes for you this time!"
+		},
+		{
+			"Element": "p",
+			"Text": "\n Patch notes:"
+		},
+		{
+			"Element": "p",
+			"Text": "▸ Fixed a real nasty bug that would sometimes reset your savegame when erroring to the title screen (including the #0_24 error when losing connection)."
+		},
+		{
+			"Element": "p",
+			"Text": "▸ Fixed Award License Plates not being awarded (retroactive)."
+		},
+		{
+			"Element": "p",
+			"Text": "▸ Fixed the CAU-Mode Smart Loot not giving out Part rewards when your car is at a high level (Faction Missions, Summits, CAU Crates)"
+		},
+		{
+			"Element": "p",
+			"Text": "▸ Fixed Summit Events erroring you back to the title screen."
+		},
+		{
+			"Element": "p",
+			"Text": "▸ Fixed CAU Crates giving a Perf spec Nissan 370z instead of a Fullstock one."
+		},
+		{
+			"Element": "p",
+			"Text": "▸ Fixed CAU Crates missing Ford Mustang GT 2011 from the loot table."
+		},
+		{
+			"Element": "p",
+			"Text": "▸ Corrected Smart Loot behavior - it will now calculate part rewards based on your current equipped parts per slot, instead of your best owned part per slot."
+		},
+		{
+			"Element": "p",
+			"Text": "▸ Fixed Faction Mission \"Showtime\" not rewarding Bucks/XP."
+		},
+		{
+			"Element": "p",
+			"Text": "\n We would like to sincerely apologize to everyone who lost their saves to the #0_24 error :("
+		},
+		{
+			"Element": "p",
+			"Text": "\n On a brighter note, the TCU community's modding efforts in the last weeks have been seriously prolific and impressive. We will make a dedicated post about modding soon. For now, go ahead and check out the modding section on the TCU Discord!"
+		},
+		{
+			"Element": "p",
+			"Text": "\n- whammy4 \n\n"
+		}
+	]
+}
