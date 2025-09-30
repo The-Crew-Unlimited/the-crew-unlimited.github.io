@@ -1,0 +1,48 @@
+{
+	"Title": 		"TCU Server update 1.2.1.0",
+	"Author": 		"whammy4",
+	"Date": 		"9/29/2025, 6:55:12 PM",
+	"Thumbnail": 	"media/Pic_20250930_044933_2560x1440.jpg",
+	"Content": [
+		{
+			"Element": "h1",
+			"Text": "TCU Server has been updated to 1.2.1.0"
+		},
+		{
+			"Element": "p",
+			"Text": "\n Patch notes:"
+		},
+		{
+			"Element": "p",
+			"Text": "▸ Fixed the crashing caused by the previous update."
+		},
+		{
+			"Element": "p",
+			"Text": "▸ Fixed Award Plates. Again."
+		},
+		{
+			"Element": "p",
+			"Text": "▸ Corrected Faction Mission reward behavior (including Bonus missions)."
+		},
+		{
+			"Element": "p",
+			"Text": "▸ Corrected Summit Practice mission reward behavior."
+		},
+		{
+			"Element": "p",
+			"Text": "▸ Corrected rewards for missions: \"Parlay\" and \"Local Noise\"."
+		},
+		{
+			"Element": "p",
+			"Text": "▸ Corrected scoring for mission \"Work The Body\"."
+		},
+		{
+			"Element": "p",
+			"Text": "▸ Fixed erroring when buying a new car spec."
+		},
+		{
+			"Element": "p",
+			"Text": "\n- whammy4 \n\n"
+		}
+	]
+}
