@@ -1,0 +1,36 @@
+{
+	"Title": 		"TCU Server update 1.2.2.0",
+	"Author": 		"whammy4",
+	"Date": 		"10/18/2025, 3:18:55 PM",
+	"Thumbnail": 	"media/woods.png",
+	"Content": [
+		{
+			"Element": "h1",
+			"Text": "TCU Server has been updated to 1.2.2.0"
+		},
+		{
+			"Element": "p",
+			"Text": "\n Patch notes:"
+		},
+		{
+			"Element": "p",
+			"Text": "▸ Implemented a fix for imported ubi saves being unplayable due to a popup saying \"UPDATING REWARDS...\". This was actually caused by a certain timestamp in the player save (that we didn't know the meaning of until now) indicating that you were participating in a summit qualifier or finale, and it was trying to give you a summit reward. As you may know, summit rewards aren't implemented yet so the game just softlocks. This has actually revealed lots of useful info to us about summit rewards!"
+		},
+		{
+			"Element": "p",
+			"Text": "▸ Fixed players incorrectly getting Award License Plates they didn't actually earn. This fix is not retroactive (to avoid any possible savegame issues, our apologies), so you get to keep your dirty unearned plates. Don't use them until you earn the rest of the needed Awards for each if it bothers you. 😏"
+		},
+		{
+			"Element": "p",
+			"Text": "▸ Fixed Award progress not saving correctly."
+		},
+		{
+			"Element": "p",
+			"Text": "▸ Adjusted Smart Loot part level picking logic: \n-You won't get parts with level higher than your player level incorrectly anymore. \n-When all your parts are max level, you will receive bucks for the hypothetical part instead of nothing (to match Pre-CAU behavior). It was meant to work like this since the 1.0 release, but whoops!"
+		},
+		{
+			"Element": "p",
+			"Text": "\n- whammy4 \n\n"
+		}
+	]
+}
