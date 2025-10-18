@@ -34,6 +34,10 @@
 		},
 		{
 			"Element": "p",
+			"Text": "▸ Fixed car health points not saving."
+		},
+		{
+			"Element": "p",
 			"Text": "\n- whammy4 \n\n"
 		}
 	]
