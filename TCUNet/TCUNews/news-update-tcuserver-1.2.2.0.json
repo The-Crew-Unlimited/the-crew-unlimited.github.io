@@ -30,6 +30,10 @@
 		},
 		{
 			"Element": "p",
+			"Text": "▸ Fixed half-baked imported ubi saves not loading (error #0_23) due to the \"Fog\" string being empty. (Half-baked meaning - you didn't follow the dump instructions correctly, and didn't press \"CONTINUE\" and advance in the main menu.)"
+		},
+		{
+			"Element": "p",
 			"Text": "\n- whammy4 \n\n"
 		}
 	]
