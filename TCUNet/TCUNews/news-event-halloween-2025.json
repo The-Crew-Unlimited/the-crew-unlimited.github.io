@@ -1,0 +1,38 @@
+{
+	"Title": 		"TCU Halloween Challenge 2025",
+	"Author": 		"whammy4",
+	"Date": 		"10/19/2025, 6:08:40 PM",
+	"Thumbnail": 	"media/Pic_20250828_192937_2560x1440.jpg",
+	"Content": [
+		{
+			"Element": "p",
+			"Text": "Good evening mortals, we are hosting the first of an annual Halloween themed competition on the TCU Discord called the \"TCU Halloween Challenge\"!"
+		},
+		{
+			"Element": "p",
+			"Text": "\n The point of the challenge is simple - we're looking for the spookiest The Crew media IMAGINABLE! It can be a picture, a clip or a YouTube video. It can be raw, or edited to all HELL, it's up to you - as long as it's The Crew!"
+		},
+		{
+			"Element": "p",
+			"Text": "\n Anyone can send and vote for submissions until the 30th of October. The Top 4 submissions will be chosen as the winners, ranked by: Bronze, Silver, Gold and Platinum. The Platinum winner will be crowned King Of Halloween on TCU!"
+		},
+		{
+			"Element": "p",
+			"Text": "\n If you would like to participate, then join the TCU Discord! Once you've joined, check the Halloween Challenge Announcement Post for more info & rules!"
+		},
+		{
+			"Element": "a",
+			"Text": "\n > Join the TCU Discord",
+			"HRef": "https://discord.gg/tcu"
+		},
+		{
+			"Element": "a",
+			"Text": "\n > Halloween Challenge Announcement Post",
+			"HRef": "https://discord.com/channels/1080974618082431018/1175838285843681320/1429520236998295746"
+		},
+		{
+			"Element": "p",
+			"Text": "\n- whammy4"
+		}
+	]
+}
