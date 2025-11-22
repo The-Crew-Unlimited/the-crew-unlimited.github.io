@@ -1,0 +1,52 @@
+{
+	"Title": 		"TCU Server update 1.3.0.0",
+	"Author": 		"whammy4",
+	"Date": 		"11/22/2025, 2:40:43 PM",
+	"Thumbnail": 	"media/Pic_20251120_194742_2560x1440.jpg",
+	"Content": [
+		{
+			"Element": "h1",
+			"Text": "TCU Server has been updated to 1.3.0.0: The Y29K Fix!"
+		},
+		{
+			"Element": "p",
+			"Text": "This may be one of the most important updates we've ever released, or arguably THE most important."
+		},
+		{
+			"Element": "p",
+			"Text": "\n Shortly after TCU's original 1.0 release back in September, it has come to our attention that if your PC date is set to post-June 2029, The Crew ceases to stop working. Or in simpler terms: The Crew stops working after June 2029."
+		},
+		{
+			"Element": "p",
+			"Text": "\n As you may imagine, we were extremely concerned (how many deaths is this game going to go through? TWO weren't enough already?). At first we were hoping that it was just a bug on the TCU Server's end, but that turned out to not be the case. It is an issue within the actual game client itself, and is not intentional but rather a bug.\n From our research, we've narrowed it down to either the Summit calendar system (from the Wild Run 2015 update), or the daily Crate mission system (from the Calling All Units 2016 update). Likely culprit is the Summit, even though nothing in the summit calendar data references anything about a June 2029 or 2029 in general. But we know what kind of quality control they had post-launch... (none)"
+		},
+		{
+			"Element": "p",
+			"Text": "\n Thankfully, we have managed to find a less than ideal, but *working* fix for The Crew's 3rd imminent death through the TCU Server software itself. We can sleep peacefully now... again."
+		},
+		{
+			"Element": "p",
+			"Text": "\n Patch notes:"
+		},
+		{
+			"Element": "p",
+			"Text": "▸ Prevented Y29K."
+		},
+		{
+			"Element": "p",
+			"Text": "▸ Fixed the server mistakenly treating CAU police cars as normal player cars when claiming free starter kits in the story mode. (e.g. - you've yet to claim your free Circuit Spec starter kit, but you already have a Circuit Spec Police car, therefore server will mistakenly charge you normal price for the kit.)"
+		},
+		{
+			"Element": "p",
+			"Text": "▸ Improved CAU Crate Fragment/Bucks reward picking logic."
+		},
+		{
+			"Element": "p",
+			"Text": "▸ Refactored Smart Loot reward data handling (the HUD shouldn't be saying you get undefined/duplicate part rewards (instead of bucks) anymore)."
+		},
+		{
+			"Element": "p",
+			"Text": "\n- whammy4 \n\n"
+		}
+	]
+}
