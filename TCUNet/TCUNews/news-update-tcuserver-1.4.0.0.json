@@ -1,0 +1,115 @@
+{
+	"Title": 		"SAY HI TO ADDON CONTENT! [TCU Server 1.4.0.0]",
+	"Author": 		"whammy4",
+	"Date": 		"01/22/2026, 9:34:23 PM",
+	"Thumbnail": 	"media/Pic_20260122_214211_2560x1440.jpg",
+	"Content": [
+		{
+			"Element": "a",
+			"HRef": "https://modworkshop.net/mod/54437",
+			"Text": "Livery mod by ENK7"
+		},
+		{
+			"Element": "h1",
+			"Text": "TCU Server has been updated to 1.4.0.0: ADDON ITEMS & MISSIONS SUPPORT!"
+		},
+		{
+			"Element": "p",
+			"Text": "This update introduces new features, bug fixes, and most importantly for mod makers and players - support for addon items and missions!"
+		},
+		{
+			"Element": "p",
+			"Text": "\n This means that for the first time, we're now finally able to introduce brand new content into the game and game server's ecosystem, instead of just replacing existing content."
+		},
+		{
+			"Element": "p",
+			"Text": "\n We can now add new items such as: Paints, Stickers, Interiors, Rims, License Plates, Car Body Parts and Performance Parts (Note on Rims & Body Parts: no model importer exists for The Crew yet, so adding new geometry is currently impossible). \n The following addon mission types can now be added: Story, Faction & CAU."
+		},
+		{
+			"Element": "p",
+			"Text": " \n After installing this new update, you will find 2 new files in your game directory: \"addon_items.xml\" and \"addon_missions.xml\". Each contain in-depth guides and useful info written via comments."
+		},
+		{
+			"Element": "h1",
+			"Text": "\n PitCrew"
+		},
+		{
+			"Element": "p",
+			"Text": "\n PitCrew is a must-have tool for all-modding purposes, including creating & installing addon item/mission mods, so if you want to install or create mods, get it now! \n\n Starting with PitCrew version 1.62, it will now automate adding data to both addon_items.xml and addon_missions.xml."
+		},
+		{
+			"Element": "a",
+			"HRef": "https://github.com/Telonof/PitCrew/tree/main",
+			"Text": "Download PitCrew from GitHub\n"
+		},
+		{
+			"Element": "a",
+			"HRef": "https://github.com/Telonof/PitCrew/blob/main/Docs/English/Merging_Databases.md",
+			"Text": "PitCrew: Merging Databases Documentation for Mod Makers"
+		},
+		{
+			"Element": "p",
+			"Text": "\n If you'll be editing the addon xml files manually, then make sure to make them read-only or back them up before installing subsequent TCU Server updates, as they will override those files. \n If you're using PitCrew, then simply press \"Compile\" in PitCrew after updating TCU Server and you're good to go."
+		},
+		{
+			"Element": "p",
+			"Text": "\n Massive thank you to FTIW for working with us to make addon items and missions a reality!"
+		},
+		{
+			"Element": "h1",
+			"Text": "\n Patch Notes:"
+		},
+		{
+			"Element": "p",
+			"Text": "▸ Implemented the League Store."
+		},
+		{
+			"Element": "p",
+			"Text": "▸ Added support for addon Items."
+		},
+		{
+			"Element": "p",
+			"Text": "▸ Added support for addon Missions."
+		},
+		{
+			"Element": "p",
+			"Text": "▸ Rewrote and optimized lots of item and mission-related code for the above."
+		},
+		{
+			"Element": "p",
+			"Text": "▸ Fixed CAU Police Mission reward logic."
+		},
+		{
+			"Element": "p",
+			"Text": "▸ Implemented the x2 Bucks CAU Crate Fragment rewards instead of cars when all available cars are already owned."
+		},
+		{
+			"Element": "p",
+			"Text": "▸ Fixed server time timezone."
+		},
+		{
+			"Element": "p",
+			"Text": "▸ New cheat: \"UnlockAllAbilities\" - Unlocks all player (progression) abilities."
+		},
+		{
+			"Element": "p",
+			"Text": "▸ New cheat: \"UnlockDLCPacks\" - Unlocks listed DLC/Gift Pack(s) by their ID."
+		},
+		{
+			"Element": "p",
+			"Text": "▸ New cheat: \"UnlockAllDLC\" - Unlocks all valid DLC Packs and all UPlay Rewards."
+		},
+		{
+			"Element": "p",
+			"Text": "▸ Fixed Wild Run Summit Tutorial Intro, Outro and The Crew Story Finale Outro missions not being validated by the server."
+		},
+		{
+			"Element": "p",
+			"Text": "▸ Rewrote a *ton* of internal game server code. Let's just say this is good news for TCU Online development."
+		},
+		{
+			"Element": "p",
+			"Text": "\n- whammy4 \n\n"
+		}
+	]
+}
