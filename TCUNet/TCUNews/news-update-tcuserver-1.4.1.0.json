@@ -1,0 +1,45 @@
+{
+	"Title": 		"TCU Server Update 1.4.1.0",
+	"Author": 		"whammy4",
+	"Date": 		"02/03/2026, 7:13:41 PM",
+	"Thumbnail": 	"media/Pic_20260111_024632_2560x1440.jpg",
+	"Content": [
+		{
+			"Element": "h1",
+			"Text": "TCU Server has been updated to 1.4.1.0."
+		},
+		{
+			"Element": "p",
+			"Text": "This update addresses the bugs that were introduced in the previous 1.4.0.0 update."
+		},
+		{
+			"Element": "h1",
+			"Text": "\n Patch Notes:"
+		},
+		{
+			"Element": "p",
+			"Text": "▸ Fixed CAU Crate Fragments not rewarding cars."
+		},
+		{
+			"Element": "p",
+			"Text": "▸ Fixed mission completion reset for CAU mission \"Calling All Units\" every time you restart the game."
+		},
+		
+		{
+			"Element": "p",
+			"Text": "▸ Fixed UnlockAllDLC cheat not working."
+		},
+		{
+			"Element": "p",
+			"Text": "▸ Fixed UnlockLockedGameContent cheat not working."
+		},
+		{
+			"Element": "p",
+			"Text": "\n P.S. Watch out for that TCU Mod announcement post any day now..."
+		},
+		{
+			"Element": "p",
+			"Text": "\n- whammy4 \n\n"
+		}
+	]
+}
