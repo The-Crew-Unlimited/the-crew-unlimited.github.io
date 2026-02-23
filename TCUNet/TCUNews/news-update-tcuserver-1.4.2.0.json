@@ -1,0 +1,42 @@
+{
+	"Title": 		"TCU Server Update 1.4.2.0",
+	"Author": 		"whammy4",
+	"Date": 		"02/23/2026, 12:13:07 AM",
+	"Thumbnail": 	"media/Pic_20260223_005815_2560x1440.jpg",
+	"Content": [
+		{
+			"Element": "a",
+			"HRef": "https://www.youtube.com/watch?v=q5ug_SWoBmQ",
+			"Text": "Check out the TCU Mod Demo Reel on YouTube!"
+		},
+		{
+			"Element": "h1",
+			"Text": "TCU Server has been updated to 1.4.2.0."
+		},
+		{
+			"Element": "h1",
+			"Text": "\n Patch Notes:"
+		},
+		{
+			"Element": "p",
+			"Text": "▸ Adjusted CAU Fragment reward logic."
+		},
+		{
+			"Element": "p",
+			"Text": "▸ Fixed FD Stunts and FD Challenges erroring on result screen. Sorry about this one!"
+		},
+		
+		{
+			"Element": "p",
+			"Text": "▸ Fixed Perk Points saving incorrectly."
+		},
+		{
+			"Element": "p",
+			"Text": "▸ Threading performance optimizations."
+		},
+		{
+			"Element": "p",
+			"Text": "\n- whammy4 \n\n"
+		}
+	]
+}
