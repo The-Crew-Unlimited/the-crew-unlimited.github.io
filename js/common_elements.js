@@ -1,6 +1,6 @@
 const STYLIZE_TOPNAV_TEXT_AS_UPPER = false;
 const BTM_PAGE_LEGAL_INFO = [
-	"TCU Project, 2025",
+	"TCU Project, 2026",
 	"The TCU Project is not affiliated with Ubisoft or Ivory Tower. This is a community made project, the goal of which is to restore \"The Crew\" back to a playable state with the use of custom server emulator software.",
 	"The TCU Project and it's staff do not host or redistribute any The Crew game files on official TCU Project sources, which includes our website, TCU Launcher and TCU Discord.",
 	"We do not assist with, support or condone piracy.",

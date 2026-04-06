@@ -1,0 +1,32 @@
+{
+	"Title": 		"TCU Server Update 1.4.3.0",
+	"Author": 		"whammy4",
+	"Date": 		"04/05/2026, 11:35:41 AM",
+	"Thumbnail": 	"media/Pic_20260405_230721_2560x1440.jpg",
+	"Content": [
+		{
+			"Element": "h1",
+			"Text": "TCU Server has been updated to 1.4.3.0."
+		},
+		{
+			"Element": "h1",
+			"Text": "\n Patch Notes:"
+		},
+		{
+			"Element": "p",
+			"Text": "▸ Server performance optimizations."
+		},
+		{
+			"Element": "p",
+			"Text": "▸ Savegame saving/loading improvements."
+		},
+		{
+			"Element": "p",
+			"Text": "▸ Some important internal changes. Getting ready for TCU Online 😉😉😉."
+		},
+		{
+			"Element": "p",
+			"Text": "\n- whammy4 \n\n"
+		}
+	]
+}
