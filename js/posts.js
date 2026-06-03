@@ -78,7 +78,12 @@ function generatePostContents(doc, directory, contentsArray, hrefToFullPost, tru
 				// Read Source (src) //
 				let contentSrc = contentObj.Source;
 				if (contentSrc != null) {
-					elem.src = getAbsoluteFromRelativeDir(directory, contentSrc);
+					// If the path starts with a slash or backslash, then assume it's a local TCUNews directory, otherwise it's an absolute path
+					if (contentSrc.startsWith("/") || contentSrc.startsWith("\\")) {
+						elem.src = getAbsoluteFromRelativeDir(directory, contentSrc.substring(1, contentSrc.length));
+					} else {
+						elem.src = contentSrc;
+					}
 				}
 				contentElems.push(elem);
 				lineCount++;

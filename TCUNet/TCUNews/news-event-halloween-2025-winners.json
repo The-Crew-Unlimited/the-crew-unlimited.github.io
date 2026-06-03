@@ -19,7 +19,7 @@
 		{
 			"Element": "img",
 			"Alt": "Bronze Submission (by @fratotof)",
-			"Source": "media/halloween2025/HC2025_Bronze.jpg"
+			"Source": "/media/halloween2025/HC2025_Bronze.jpg"
 		},
 		{
 			"Element": "p",
@@ -37,7 +37,7 @@
 		{
 			"Element": "img",
 			"Alt": "Silver Submission (by @notactuallybarackobama)",
-			"Source": "media/halloween2025/HC2025_Silver.jpg"
+			"Source": "/media/halloween2025/HC2025_Silver.jpg"
 		},
 		{
 			"Element": "p",
@@ -55,7 +55,7 @@
 		{
 			"Element": "img",
 			"Alt": "Gold Submission (by @ejb2000)",
-			"Source": "media/halloween2025/HC2025_Gold.jpg"
+			"Source": "/media/halloween2025/HC2025_Gold.jpg"
 		},
 		{
 			"Element": "p",
@@ -73,7 +73,7 @@
 		{
 			"Element": "img",
 			"Alt": "Platinum Submission (by @wolfgaming0522)",
-			"Source": "media/halloween2025/HC2025_Platinum.JPG"
+			"Source": "/media/halloween2025/HC2025_Platinum.JPG"
 		},
 		{
 			"Element": "p",
@@ -91,7 +91,7 @@
 		{
 			"Element": "img",
 			"Alt": "Honorable Mention (by @reale_stone)",
-			"Source": "media/halloween2025/MostVoted.jpg"
+			"Source": "/media/halloween2025/MostVoted.jpg"
 		},
 		{
 			"Element": "p",

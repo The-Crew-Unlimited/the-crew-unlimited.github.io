@@ -1,0 +1,146 @@
+{
+	"Title": 		"EXTREMELY EXCITING NEWS FOR THE CREW!",
+	"Author": 		"whammy4",
+	"Date": 		"06/03/2026, 7:21:00 PM",
+	"Thumbnail": 	"media/thumbnai_tc1mml.jpg",
+	"Content": [
+		{
+			"Element": "p",
+			"Text": "FTIW, the godfather of The Crew modding, has outdone himself once again. Today on June 3rd 2026, he has just released the \"Races A Plenty\" Mod, and the \"TC1MissionMaker\" tool. \n\n Let me just put it simply:"
+		},
+		{
+			"Element": "h1",
+			"Text": "FTIW has just added over 520+ new missions to the game, and released an entire MISSION CREATOR TOOL for The Crew."
+		},
+		{
+			"Element": "p",
+			"Text": "\nThis is easily one of the most exciting and significant events in The Crew's entire history. FTIW didn't just triple the amount of races and activities in the game, he extended the game's lifespan infinitely by letting anyone create their own missions! \n\n Let's now go over each release in order:"
+		},
+		{
+			"Element": "h1",
+			"Text": "\nRACES A PLENTY"
+		},
+		{
+			"Element": "img",
+			"Alt": "Races A Plenty Thumbnail",
+			"HRef": "https://modworkshop.net/mod/56560",
+			"Source": "https://storage.modworkshop.net/mods/images/JiJVE8LSP9vJZL2hx756dB0t3F7xtWuu4Qn2ZPkz.webp"
+		},
+		{
+			"Element": "a",
+			"HRef": "https://modworkshop.net/mod/56560",
+			"Text": "▸ Download Races A Plenty"
+		},
+		{
+			"Element": "p",
+			"Text": "\nRaces A Plenty is a mod made by FTIW that adds over 520+ missions to the game. The missions consist of:"
+		},
+		{
+			"Element": "p",
+			"Text": "▸ PVP Exclusive tracks, ported over as Faction Missions"
+		},
+		{
+			"Element": "p",
+			"Text": "▸ Leftover developer test missions"
+		},
+		{
+			"Element": "p",
+			"Text": "▸ Recovered PC Beta missions that were wiped on release"
+		},
+		{
+			"Element": "p",
+			"Text": "▸ Summit exclusive missions"
+		},
+		{
+			"Element": "p",
+			"Text": "\nMost missions have a special variant (labelled with an \"S\") right next to them. Special variant missions are remixes of an existing mission, they will be either time trials or A to B's, without bots, and without spec restrictions, so you could even use fullstock rides for something (finally)!"
+		},
+		{
+			"Element": "p",
+			"Text": "\nTo access all these missions, simply navigate to the \"FACTIONS & PVP\" tab in the map screen, and you will see the entire map full of new mission blips!"
+		},
+		{
+			"Element": "p",
+			"Text": "\nRaces A Plenty is an absolutely great and high quality mod that expands the game's amount of content to a RIDICULOUS extent. This is a must-have mod for anyone who has already played most missions in the game/completed the story (though feel free to install it at any point in your playthrough, it's vanilla-friendly and does not interfere with any of the gameplay, missions or story!)."
+		},
+		
+		{
+			"Element": "h1",
+			"Text": "\nMISSION MAKER"
+		},
+		{
+			"Element": "img",
+			"Alt": "TC1MissionMaker Thumbnail",
+			"HRef": "https://modworkshop.net/mod/57256",
+			"Source": "https://storage.modworkshop.net/mods/images/CjOS7B7z8UB2Jhfb5koAML2I6tBkVSghyJTQsiFc.webp"
+		},
+		{
+			"Element": "a",
+			"HRef": "https://modworkshop.net/mod/57256",
+			"Text": "▸ Download TC1MissionMaker"
+		},
+		{
+			"Element": "p",
+			"Text": "\nYou thought the Races A Plenty mod alone is exciting? Here is an actual super in-depth, super flexible The Crew Mission Creator tool, brought to you by FTIW. No, this isn't just some basic and limited \"Race Creator\" toy (like the Wild Run update's FreeDrive Challenge mode), this is an actual MISSION Creator tool implementation, that lets you use the same engine features as the developers - various gamemodes (much more than just races), various settings, unlimited checkpoints, checkpoint customization, triggers, AI configuration, etc!"
+		},
+		{
+			"Element": "p",
+			"Text": "\nI can't express how AMAZING this is. This is exactly what the game always needed, and it's also what the original developers wanted to give to us (instead of that excuse of a race creator called FD Challenge from Wild Run). The game now effectively has an infinite amount of content, because anyone can create missions now."
+		},
+		{
+			"Element": "p",
+			"Text": "\nYou can start creating your own missions/mission packs RIGHT NOW, simply get TC1MissionMaker and head on over to the wiki for instructions (they're really simple to understand!)"
+		},
+		{
+			"Element": "a",
+			"HRef": "https://github.com/Telonof/CrewTools/wiki/TC1MissionMaker",
+			"Text": "▸ TC1MissionMaker Wiki\n"
+		},
+		{
+			"Element": "a",
+			"HRef": "https://modworkshop.net/g/the-crew/document/how-to-make-missions",
+			"Text": "▸ How To Make: Missions | Tutorial by FTIW"
+		},
+		{
+			"Element": "p",
+			"Text": "\nYou can Download existing Mission mods and Release your own brand new Mission mods on (or any other kind of mod):"
+		},
+		{
+			"Element": "a",
+			"HRef": "https://modworkshop.net/g/the-crew",
+			"Text": "▸ ModWorkshop (Home of The Crew mods)\n"
+		},
+		{
+			"Element": "a",
+			"HRef": "https://discord.com/channels/1080974618082431018/1229904464211607573",
+			"Text": "▸ Modding Releases on TCU Discord"
+		},
+		
+		{
+			"Element": "h1",
+			"Text": "\nIN CONCLUSION..."
+		},
+		{
+			"Element": "p",
+			"Text": "\nWe at the TCU Team may have revived the game, but FTIW basically singlehandedly extended the game's lifespan to pretty much infinity. This also already means that we can keep expanding the game's content in TCU Online (I'm already preparing my evil plan to add FOMO missions and cars content... I'm kidding.)"
+		},
+		{
+			"Element": "p",
+			"Text": "\nI really want to express my gratitude to FTIW for the literal wonders he keeps doing for the game and it's community, he really is our superhero. I love that guy so much. In the next TCU Mod update I'm going to be adding pro-FTIW propaganda posters on building walls in all major cities."
+		},
+		{
+			"Element": "p",
+			"Text": "\nAnd speaking of TCU Mod, it also just so happens that we have made some completely unexpected and amazing discoveries a few days ago that now allow me to do more with TCU Mod's graphics than I ever could before... (I give you one guess to figure out who helped me make it possible... Yup, FTIW!)."
+		},
+		
+		{
+			"Element": "p",
+			"Text": "\nStart making & playing missions and stay tuned!"
+		},
+		
+		{
+			"Element": "p",
+			"Text": "\n- whammy4"
+		}
+	]
+}

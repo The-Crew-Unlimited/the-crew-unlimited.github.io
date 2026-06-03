@@ -19,7 +19,7 @@
 		{
 			"Element": "img",
 			"Alt": "Bronze Submission (by @jesper18)",
-			"Source": "media/christmas2025/Christmas2025_Bronze.jpg"
+			"Source": "/media/christmas2025/Christmas2025_Bronze.jpg"
 		},
 		{
 			"Element": "p",
@@ -37,7 +37,7 @@
 		{
 			"Element": "img",
 			"Alt": "Silver Submission (by @lastatin)",
-			"Source": "media/christmas2025/Christmas2025_Silver.jpg"
+			"Source": "/media/christmas2025/Christmas2025_Silver.jpg"
 		},
 		{
 			"Element": "p",
@@ -59,7 +59,7 @@
 		{
 			"Element": "img",
 			"Alt": "Gold Submission #1 (by @kensuke9227)",
-			"Source": "media/christmas2025/Christmas2025_Gold1.jpg"
+			"Source": "/media/christmas2025/Christmas2025_Gold1.jpg"
 		},
 		{
 			"Element": "p",
@@ -73,7 +73,7 @@
 		{
 			"Element": "img",
 			"Alt": "Gold Submission #2 (by @ze_pereira)",
-			"Source": "media/christmas2025/Christmas2025_Gold2.jpg"
+			"Source": "/media/christmas2025/Christmas2025_Gold2.jpg"
 		},
 		{
 			"Element": "p",
@@ -91,7 +91,7 @@
 		{
 			"Element": "img",
 			"Alt": "Platinum Submission (by @Newanzi)",
-			"Source": "media/christmas2025/Christmas2025_Platinum.jpg"
+			"Source": "/media/christmas2025/Christmas2025_Platinum.jpg"
 		},
 		{
 			"Element": "p",
