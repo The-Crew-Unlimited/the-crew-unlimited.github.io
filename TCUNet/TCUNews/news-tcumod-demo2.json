@@ -1,0 +1,25 @@
+{
+	"Title": 		"TCU Mod - Demo Reel 2",
+	"Author": 		"whammy4",
+	"Date": 		"09/15/2026, 9:42:00",
+	"Thumbnail": 	"media/tcumod_demo2.jpg",
+	"Content": [
+		{
+			"Element": "h1",
+			"Text": "TCU Mod - Demo Reel 2 is out!"
+		},
+		{
+			"Element": "p",
+			"Text": "\nFor the first year anniversary of TCU and The Crew being saved, I have compiled a brand new demo reel for TCU Mod. It's a much more action-packed demo this time, so please enjoy!"
+		},
+		{
+			"Element": "a",
+			"HRef": "https://www.youtube.com/watch?v=HIBMNnRWkdY",
+			"Text": "https://www.youtube.com/watch?v=HIBMNnRWkdY"
+		},
+		{
+			"Element": "p",
+			"Text": "\n- whammy4 \n\n"
+		}
+	]
+}
