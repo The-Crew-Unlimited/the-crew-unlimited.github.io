@@ -1,0 +1,40 @@
+{
+	"Title": 		"TCU Server Update 1.4.6.0",
+	"Author": 		"whammy4",
+	"Date": 		"09/17/2026, 12:00:00 AM",
+	"Thumbnail": 	"media/Pic_20260813_233443_1920x1080.jpg",
+	"Content": [
+		{
+			"Element": "h1",
+			"Text": "TCU Server has been updated to 1.4.6.0."
+		},
+		{
+			"Element": "p",
+			"Text": "While we prepare a pretty huge update behind the scenes, we bring you a long-awaited fix for an issue that has been plaguing the game and every PC player for a decade."
+		},
+		{
+			"Element": "h1",
+			"Text": "\n Patch Notes:"
+		},
+		{
+			"Element": "p",
+			"Text": "▸ The game bug left in the game by the developers that lowers your windows audio volume since CAU [2016] has finally been fixed. Good job, r00t0!"
+		},
+		{
+			"Element": "p",
+			"Text": "▸ Fixed crash when viewing leaderboards in the result menu."
+		},
+		{
+			"Element": "p",
+			"Text": "▸ Fixed leaderboards not updating live when getting a new high score."
+		},
+		{
+			"Element": "p",
+			"Text": "▸ Minor internal code improvements."
+		},
+		{
+			"Element": "p",
+			"Text": "\n- whammy4 \n\n"
+		}
+	]
+}
