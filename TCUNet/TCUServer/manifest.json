@@ -1,5 +1,5 @@
 {
-	"LatestVersion": "1.4.6.1",
+	"LatestVersion": "1.4.6.2",
 	"Versions": [
 		{
 			"Version": "2025.08.15",
@@ -122,6 +122,12 @@
 			"Version": "1.4.6.1",
 			"File": "TCUServer-1.4.6.1.7z",
 			"SHA256": "25D4404CE39C88A266E1FD13EE34031AB5CCDDEE889BFA855316CF28E94F94E5",
+			"SupportedGameVersions": ["1.2.0.0"]
+		},
+		{
+			"Version": "1.4.6.2",
+			"File": "TCUServer-1.4.6.2.7z",
+			"SHA256": "7C44BB825EBEBCD21020FA021080BE08049A9909DCC364DE2AD9C348481189E3",
 			"SupportedGameVersions": ["1.2.0.0"]
 		}
 	]
